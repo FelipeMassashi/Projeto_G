@@ -1,0 +1,352 @@
+<body style="margin-top: -53px;">
+  <div class="d-flex gap-3 align-items-center" style="margin-left: 6.5%;">
+    <fa-icon [icon]="icon_home" class="m-0 icon-container" style="color: var(--font-title-main);" id="icon-toBar"></fa-icon>
+    <p style="font-size: 35px;
+    font-weight: 600;
+    color: var(--font-title-main); margin: 0; ">Home</p>
+  </div>
+  <div class="row row-main">
+    <div class="col-5">
+      <div class="A">
+        <div
+          class="card right p-3"
+          [ngClass]="{cardDark: statusThemeDark === 'dark'}"
+          >
+          <div class="card-container">
+            <!-- INICITIVAS  -->
+            <div class="d-flex flex-row align-items-center flex-wrap justify-content-between">
+              <h3>Iniciativas</h3>
+              <div class="d-flex flex-row align-items-center flex-wrap gap-2 ">
+                <button
+                  class="btn card-container-button"
+                  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Tooltip on left"
+                >
+                  Criar nova iniciativa
+                  <fa-icon
+                    [icon]="icon_mais"
+                    style="color: var(--font-title); margin-left: 0.4rem;"
+                    [ngClass]="{cardDark: statusThemeDark === 'dark'}"
+                  ></fa-icon>
+                </button>
+                <span
+                  class="circle circle-card" style="width: 35px; height: 35px;background-color: var(--sub-card);"
+
+                  >
+                  <p
+                    style="text-align: center; margin-top: 5px; margin-bottom: 0; font-family: 'Poppins', sans-serif; font-weight: 600; color: var(--font-content);"
+                    [ngStyle]="{'font-weight': (ativo ? '300' : '400')}">29</p>
+                </span>
+              </div>
+            </div>
+            <div
+              class="sub-container"
+              [ngClass]="{subCardDark: statusThemeDark === 'dark'}"
+            >
+              <div class="row ms-0 me-0" style="background-color: transparent;">
+                <div class="col">
+                  <div class="d-flex flex-row flex-wrap gap-3">
+                    <div class="d-flex flex-row gap-3 align-items-center">
+                      <span class="circle" style="background-color: #356DC7;"></span>
+                      <p class="num">02</p>
+                      <p class="letter">Em Edição</p>
+                    </div>
+                    <div class="d-flex flex-row gap-3 align-items-center">
+                      <span class="circle" style="background-color: #71D112;"></span>
+                      <p class="num">12</p>
+                      <p class="letter">Concluídas</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col ms-5">
+                  <div class="d-flex flex-row flex-wrap gap-3">
+                    <div class="d-flex flex-row gap-3 align-items-center">
+                      <span class="circle bg-warning"></span>
+                      <p class="num">15</p>
+                      <p class="letter">Aprovadas</p>
+                    </div>
+                    <div class="d-flex flex-row gap-3 align-items-centera">
+                      <span class="circle bg-secondary"></span>
+                      <p class="num">03</p>
+                      <p class="letter">Devolvidas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row ms-0 me-0" style="background-color: transparent;">
+                <div class="col-6">
+                  <div class="d-flex flex-row flex-wrap gap-0">
+                    <div class="card p-2 align-items-center card-dados" style="width: 100%;">
+                      <h5>05</h5>
+                      <p>Disponíveis</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex flex-row flex-wrap gap-0">
+                    <div class="card p-2 align-items-center flex-wrap card-dados" style="margin-left: 10%; width: 100%;">
+                      <h5>02</h5>
+                      <p>Em Edição</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card right p-3"
+          style="margin-top: 5.5%;"
+          [ngClass]="{cardDark: statusThemeDark === 'dark'}"
+        >
+          <div class="card-container">
+            <!-- PROJETOS -->
+            <div class="d-flex flex-row align-items-center flex-wrap justify-content-between">
+              <h3>Projetos</h3>
+              <div class="d-flex flex-row align-items-center flex-wrap gap-2">
+                <button
+                  class="btn card-container-button"
+                >
+                  Criar novo projeto
+                  <fa-icon
+                    [icon]="icon_mais"
+                    style="color: var(--font-title); margin-left: 0.4rem;"
+                    [ngClass]="{cardDark: statusThemeDark === 'dark'}"
+                  ></fa-icon>
+                </button>
+                <span
+                  class="circle circle-card" style="width: 35px; height: 35px; background-color: var(--sub-card);"
+                >
+                  <p
+                    style="text-align: center; margin-top: 5px; margin-bottom: 0; font-family: 'Poppins', sans-serif; color: var(--font-content);"
+                    [ngStyle]="{'font-weight': (ativo ? '300' : '400')}">74</p>
+                </span>
+              </div>
+            </div>
+            <!-- **** CAROUSEL **** -->
+            <div
+              class="sub-container"
+              [ngClass]="{subCardDark: statusThemeDark === 'dark'}"
+
+            >
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <!-- /*/*** CARD 01 ***\*\ -->
+                  <div class="carousel-item active" style="transition: all 0.5s;">
+                    <div class="row ps-3">
+                      <div class="col d-flex flex-row flex-wrap">
+                        <div class="d-flex flex-row flex-wrap gap-3">
+                          <div class="d-flex flex-row gap-3 align-items-center">
+                            <span class="circle" style="background-color: #4FC1DF;"></span>
+                            <p class="num">30</p>
+                            <p class="letter">Em Execução</p>
+                          </div>
+                          <div class="d-flex flex-row gap-3 align-items-center">
+                            <span class="circle" style="background-color: #71D112;"></span>
+                            <p class="num">02</p>
+                            <p class="letter">Concluídos</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col d-flex flex-row flex-wrap">
+                        <div class="d-flex flex-row flex-wrap gap-3">
+                          <div class="d-flex flex-row gap-3 align-items-center ps-3">
+                            <span class="circle bg-warning"></span>
+                            <p class="num">18</p>
+                            <p class="letter">Prest.Contas</p>
+                          </div>
+                          <div class="d-flex flex-row gap-3 align-items-center ps-3">
+                            <span class="circle" style="background-color: #237938;"></span>
+                            <p class="num">10</p>
+                            <p class="letter">Em Conclusão</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /*/*** CARD 02 ***\*\ -->
+                  <div class="carousel-item"  style="transition: all 0.5s;">
+                    <div class="row ps-3">
+                      <div class="col d-flex flex-row flex-wrap">
+                        <div class="d-flex flex-row flex-wrap gap-3">
+                          <div class="d-flex flex-row gap-3 align-items-center">
+                            <span class="circle bg-danger"></span>
+                            <p class="num">18</p>
+                            <p class="letter">Cancelados</p>
+                          </div>
+                          <div class="d-flex flex-row gap-3 align-items-center">
+                            <span class="circle bg-secondary"></span>
+                            <p class="num">11</p>
+                            <p class="letter">Suspensos</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col d-flex flex-row flex-wrap">
+                        <div class="d-flex flex-row flex-wrap gap-3">
+                          <div class="d-flex flex-row gap-3 align-items-center ps-3">
+                            <span class="circle" style="background-color: #e06900;"></span>
+                            <p class="num">04</p>
+                            <p class="letter">Transferidos</p>
+                          </div>
+                          <div class="d-flex flex-row gap-3 align-items-center ps-3" style="visibility: hidden;">
+                            <span class="circle" style="background-color: #e06900;"></span>
+                            <p class="num">04</p>
+                            <p class="letter">*Transferidos</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <fa-icon
+                    class="btn-next"
+                    [icon]="icon_seta_left"
+                    style="position: absolute; left: -25%;"
+                    [ngClass]="{subCardDark: statusThemeDark === 'dark'}"
+                  ></fa-icon>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <fa-icon
+                    class="btn-next"
+                    [icon]="icon_seta_right"
+                    style="position: absolute; right: -25%;"
+                    [ngClass]="{subCardDark: statusThemeDark === 'dark'}"
+                  ></fa-icon>
+                </button>
+              </div>
+              <div class="row ms-0 me-0" style="background-color: transparent;">
+                <div class="col-6">
+                  <div class="d-flex flex-row flex-wrap gap-0">
+                    <div class="card p-2 align-items-center card-dados" style="width: 100%;">
+                      <h5>21</h5>
+                      <p>Vencidos</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex flex-row flex-wrap gap-0">
+                    <div class="card p-2 align-items-center flex-wrap card-dados" style="margin-left: 10%; width: 100%;">
+                      <h5>03</h5>
+                      <p>Em Edição</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="B">
+        <div
+          class="card left p-3"
+          [ngClass]="{cardDark: statusThemeDark === 'dark'}"
+          >
+          <div class="card-container m-0 p-0">
+            <h3>Iniciativas e Projetos Recentes</h3>
+            <div class="d-flex flex-column justify-content-around" style="gap: 10px;">
+              <div class="input-group mt-5 ">
+                <button class="btn btn-outline btn-buscar" type="button">Buscar</button>
+                <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                  <option value="1">Iniciativas</option>
+                  <option value="2">Projetos</option>
+                </select>
+              </div>
+            </div>
+            <div
+              class=" sub-container mt-5"
+              [ngClass]="{subCardDark: statusThemeDark === 'dark'}"
+            >
+              <h5 class="card-title" style="font-size: 18px;">Projeto BRA/22/G71 - Fortalecimento Institucional para o Fortalecimento do Protocolo de Montreal - Fase IX</h5>
+              <div class="progress mt-4 mb-4" >
+                <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 60%; font-family: 'Poppins', sans-serif;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+              </div>
+              <div class="row" style="padding: 0 13px; padding-bottom: 0; background-color: transparent;">
+                <div class="col-6 ru-class">
+                  <p>UR:</p>
+                  <p>Secretária Executiva</p>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-end">
+                  <div class="row" style="padding-right: 13px; background-color: transparent;">
+                    <div class="col d-flex align-items-center gap-2">
+                      <span class="circle" style="background-color: #FF7B00;"></span>
+                      <p class="letter">Transferidos</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sub-container"
+              [ngClass]="{subCardDark: statusThemeDark === 'dark'}"
+            >
+              <div class="card-content-left">
+                <h5 class="card-title" style="font-size: 18px;">BCGI/cactário (MG)- Criação de coleção de cactos e suculentas e capacitação da equipe do Jardim Botânico de Juiz de Fora</h5>
+                <div class="progress mt-4 mb-4">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 20%; font-family: 'Poppins', sans-serif;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">20%</div>
+                </div>
+              </div>
+              <div class="card-content-right" style="font-size: 18px;">
+                <div class="row" style="padding: 0 13px; padding-bottom: 0; background-color: transparent;">
+                  <div class="col-6 ru-class">
+                    <p>UR:</p>
+                    <p>Secretária Executiva</p>
+                  </div>
+                  <div class="col-6 d-flex justify-content-end align-items-end">
+                    <div class="row" style="padding-right: 13px; background-color: transparent;">
+                      <div class="col d-flex align-items-center gap-2">
+                        <span class="circle" style="background-color: #237938;"></span>
+                        <p class="letter">Em Conclusão</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-left-button d-flex flex-row gap-1 justify-content-center mt-3">
+              <button
+                class="btn btn-next-previous"
+                type="button"
+                [ngClass]="{subCardDark: statusThemeDark === 'dark'}"
+               >Anterior</button>
+              <button
+                class="btn btn-next-previous"
+                type="button"
+                [ngClass]="{subCardDark: statusThemeDark === 'dark'}"
+              >Próximo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!--
+  Em Edição
+  Em Execução
+  Prest.Contas
+  Em Conclusão
+  Concluídos
+  Suspensos
+  Canceladas
+  transferidos
+
+  =============
+
+  Submenu projetos listar*********
+
+  /vencidos
+  /vigentes - icone vigentes que vencem em ate 30 dias
+  /demais(transferidos, concluidos, suspensos e cancelados)
+
+  ordenar a listagem dos projetos
+
+  codigo do projeto
+  nome PROJETO
+  time line ou data fim do projeto
+
+  UR -> PERFIL DRE E GESTOR DE SISTEMA
+  SO A SIGLA, COLOCANDO UM BALAO
+
+-->

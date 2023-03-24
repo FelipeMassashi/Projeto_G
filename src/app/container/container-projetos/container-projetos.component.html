@@ -1,0 +1,395 @@
+<body style="margin-top: -53px;">
+  <div class="d-flex gap-3 align-items-center">
+    <fa-icon [icon]="icon_projeto" class="m-0 icon-container" style="color: var(--font-title-main);" id="icon-toBar"></fa-icon>
+    <p style="font-size: 35px;
+    font-weight: 600;
+    color: var(--font-title-main); margin: 0; ">Projeto</p>
+  </div>
+  <div class="row row-main">
+     <div class="col-12">
+
+      <!-- =========================== NAV DE PESQUISA ========================= -->
+        <div class="row mt-3 mb-4">
+          <div class="col-4">
+            <div class="input-group p-3 ps-0 pe-0 m-0 w-100" id="form-input">
+              <input  type="text" class="form-control input-pesquisa" id="input"  placeholder="Pesquisa"/>
+              <button
+                class="btn btn-secondary dropdown-toggle btn-categoria" type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                [ngClass]="{noBorder: statusThemeDark === 'dark'}"
+              >
+                Situação
+              </button>
+              <ul class="dropdown-menu dropdown-itens">
+                <li><a class="dropdown-item">Cancelado</a></li>
+                <li><a class="dropdown-item">Concluído</a></li>
+                <li><a class="dropdown-item">Em conclusão</a></li>
+                <li><a class="dropdown-item">Transferido</a></li>
+                <li><a class="dropdown-item">Suspenso</a></li>
+              </ul>
+              <button class="btn btn-outline btn-buscar" type="button">
+                <svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- PESQUISA AVANÇADA -->
+          <div class="col-5 d-flex flex-row gap-3">
+            <p class="p-3 ps-0 pe-0 m-0">
+              <button class="btn btn-categoria" id="config-avan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <fa-icon [icon]="icon_pesquisa_avancada"></fa-icon>
+              </button>
+            </p>
+            <div class="collapse mt-3" id="collapseExample">
+              <div class="card-pesquisa-avancada p-2 pb-3 pt-3">
+                <div class="form-group d-flex flex-row flex-wrap justify-content-center gap-3 p-0 m-0">
+                  <div class="m-0 p-0">
+                    <label><p class="p-0 m-0">Data Inicio(de)</p></label>
+                    <input
+                      class="form-control input-data"
+                      bsDatepicker
+                      [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY', containerClass: 'theme-green' }"
+                      style="width: 100%;">
+                  </div>
+                  <div>
+                    <label><p class="p-0 m-0">Data Inicio(até)</p></label>
+                    <input
+                      class="form-control input-data"
+                      bsDatepicker
+                      [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY', containerClass: 'theme-green' }"
+                      style="width: 100%;">
+                  </div>
+                  <div class="flex-wrap">
+                    <label><p class="p-0 m-0">Data Término(de)</p></label>
+                    <input
+                      class="form-control input-data"
+                      bsDatepicker
+                      [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY', containerClass: 'theme-green' }"
+                      style="width: 100%;">
+                  </div>
+                  <div>
+                    <label><p class="p-0 m-0">Data Término(até)</p></label>
+                    <input
+                      class="form-control input-data"
+                      bsDatepicker
+                      [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY', containerClass: 'theme-green' }"
+                      style="width: 100%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 ms-0 pt-3 pb-3 ps-0 pag">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="">1</a></li>
+                <li class="page-item"><a class="page-link" href="">2</a></li>
+                <li class="page-item"><a class="page-link" href="">3</a></li>
+                <li class="page-item"><a class="page-link" href="">4</a></li>
+                <li class="page-item"><a class="page-link" href="">5</a></li>
+                <li class="page-item"><a class="page-link" href="">6</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+      <!-- ====================== VENCIDOS ======================= -->
+
+      <div class="card-main m-0 p-0">
+        <p class="m-0 p-1 mt-3 ms-4" id="card-main-title">Vencidos</p>
+        <ul
+          class="list-group ps-3 pe-3 pb-3"
+          [ngClass]="{cardDark: statusThemeDark === 'dark'}"
+          >
+          <!-- TOBAR-VENCIDOS -->
+          <li class="list-group-item" style="background-color: var(--card);">
+            <div class="row m-0 menu p-2">
+              <div class="col-2">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Código</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center"></fa-icon>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Nome do projeto</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">UR</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Situação</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Fim</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Execução</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- TABELAS-VENCIDOS -->
+          <li class="list-group-item" *ngFor="let projeto_vencido of projetos_vencidos">
+            <div class="row m-0 p-0 pt-1 pb-1 card-content link" routerLink="/projetos-detalhar">
+              <div class="col-2 m-0 p-1 d-flex flex-column align-items-center justify-content-center">
+                <p id="text-content">{{ projeto_vencido.codigo }}</p>
+              </div>
+              <div class="col-4 m-0 p-3 dica">
+                <p id="text-content" class="text-content-nome"
+                >{{ projeto_vencido.nome }}</p>
+              </div>
+              <div class="col-1 m-0 p-3 d-flex flex-column justify-content-center">
+                <p id="text-content-ru">{{ projeto_vencido.ur }}</p>
+              </div>
+              <div class="col-2 m-0 p-3 d-flex flex-column gap-3 align-items-center justify-content-center" id="text-content">
+                <span class="badge" [ngClass]="getColor(projeto_vencido.situacao)">
+                  {{ projeto_vencido.situacao }}
+                </span>
+              </div>
+              <div class="col-2 m-0 p-3 d-flex flex-column justify-content-center">
+                <p id="text-content-date">{{ projeto_vencido.dataFim }}</p>
+              </div>
+              <div class="col-1 m-0 d-flex flex-column justify-content-center">
+                <span class="c-circular-progress c-circular-progress--{{ teste }}">
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ====================== VIGENTES ======================= -->
+      <div class="card-title m-0 p-0 mt-5">
+        <p class="m-0 p-1 ms-4" id="card-main-title">Vigentes</p>
+        <ul
+          class="list-group ps-3 pe-3 pb-3"
+          [ngClass]="{cardDark: statusThemeDark === 'dark'}">
+          <!-- TOBAR-VIGENTES -->
+          <li class="list-group-item">
+            <div class="row m-0 menu p-2">
+              <div class="col-2">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Código</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Nome do projeto</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">UR</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Situação</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Fim</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Execução</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- TABELA-VIGENTES -->
+          <li class="list-group-item" *ngFor="let projeto_vigente of projetos_vigentes">
+            <div class="row m-0 p-0 mt-1 mb-2 card-content"class="row m-0 p-0 pt-1 pb-1 card-content link" routerLink="/projetos-detalhar">
+              <div class="col-2 m-0 p-1 d-flex flex-column align-items-center justify-content-center">
+                <p id="text-content">{{ projeto_vigente.codigo }}</p>
+              </div>
+              <div class="col-4 m-0 p-3">
+                <p id="text-content" class="text-content-nome"
+                >{{ projeto_vigente.nome }}</p>
+              </div>
+              <div class="col-1 m-0 p-3 d-flex flex-column justify-content-center">
+                <p id="text-content-ru">{{ projeto_vigente.ur }}</p>
+              </div>
+              <div class="col-2 m-0 p-3 d-flex flex-column gap-3 align-items-center justify-content-center" id="text-content">
+                <span class="badge" [ngClass]="getColor(projeto_vigente.situacao)">
+                  {{ projeto_vigente.situacao }}
+                </span>
+              </div>
+              <div class="col-2 m-0 p-3 d-flex flex-column justify-content-center">
+                <p id="text-content-date">{{ projeto_vigente.dataFim }}</p>
+              </div>
+              <div class="col-1 m-0 d-flex flex-column justify-content-center">
+                <span class="c-circular-progress c-circular-progress--{{ teste1 }}">
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ====================== OUTROS ======================= -->
+      <div class="card-title m-0 p-0 mt-5">
+        <p class="m-0 p-1 ms-4" id="card-main-title">Outros</p>
+        <ul
+          class="list-group ps-3 pe-3 pb-3"
+          [ngClass]="{cardDark: statusThemeDark === 'dark'}">
+          <!-- TOBAR-OUTROS -->
+          <li class="list-group-item">
+            <div class="row m-0 menu p-2">
+              <div class="col-2">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Código</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Nome do projeto</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">UR</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Situação</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Fim</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="d-flex flex-row justify-content-center gap-1">
+                  <a href="" class="link-ordena">Execução</a>
+                  <fa-icon [icon]="icon_ordenar" class="align-self-center">
+                  </fa-icon>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- TABELA-OUTROS -->
+          <li class="list-group-item" *ngFor="let projeto_outro of projetos_outros">
+            <div class="row m-0 p-0 pt-1 pb-1 card-content link" routerLink="/projetos-detalhar">
+              <div class="col-2 m-0 p-3 d-flex flex-column align-items-center justify-content-center">
+                <p id="text-content">{{ projeto_outro.codigo }}</p>
+              </div>
+              <div class="col-4 m-0 p-3">
+                <div id="text-content" class="text-content-nome"
+                >{{ projeto_outro.nome }}</div>
+              </div>
+              <div class="col-1 m-0 p-3 d-flex flex-column justify-content-center">
+                <p id="text-content-ru">{{ projeto_outro.ur }}</p>
+              </div>
+              <div class="col-2 m-0 p-3 d-flex flex-column gap-3 align-items-center justify-content-center" id="text-content">
+                <span class="badge" [ngClass]="getColor(projeto_outro.situacao)">{{ projeto_outro.situacao }}</span>
+              </div>
+              <div class="col-2 m-0 p-3 d-flex flex-column justify-content-center">
+                <p id="text-content-date">{{ projeto_outro.dataFim }}</p>
+              </div>
+              <div class="col-1 m-0 d-flex flex-column justify-content-center">
+                <span class="c-circular-progress c-circular-progress--{{ teste2 }}">
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!--
+  Em Edição
+  Em Execução
+  Prest.Contas
+  Em Conclusão
+  Concluídos
+  Suspensos
+  Canceladas
+  transferidos
+
+  =============
+
+  Submenu projetos listar*********
+
+  /vencidos
+  /vigentes - icone vigentes que vencem em ate 30 dias
+  /demais(transferidos, concluidos, suspensos e cancelados)
+
+  ordenar a listagem dos projetos
+
+  codigo do projeto
+  nome PROJETO
+  time line ou data fim do projeto
+
+  UR -> PERFIL DRE E GESTOR DE SISTEMA
+  SO A SIGLA, COLOCANDO UM BALAO
+
+  Nome do projeto -> colocar somente 2 linhas para o nome e colocando tbm um balão para ve o nome completo do projeto
+
+  Criar 2 novas colunas -> coluna data fim(fim) e coluna de progresso (circle progress)
+
+  No menu Projetos, na aba de Outros, colocar um button de faz aparecer os projetos cancelados. Por padrão só vão aparecer os projetos com situação de transferidos e cancelados
+
+-->
+
+

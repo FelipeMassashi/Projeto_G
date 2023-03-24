@@ -1,0 +1,125 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2 navbar" style="overflow: scroll;" >
+
+      <div class=" w-100" style="overflow: scroll; position: absolute; top: 0;">
+
+        <div class="d-flex w-100 flex-column" style="margin-left: 25%;">
+          <!-- LOGO -->
+          <a class="d-flex text-decoration-none mt-4 logo mb-4"  ngbTooltip="What a great tip!" >
+          </a>
+          <!-- MENU-ITENS -->
+          <div class="d-flex flex-column">
+
+            <ul class="nav nav-pills flex-column mb-0 mt-3  gap-4" id="menu">
+              <li class="nav-item" id="menu-item">
+                <button routerLink="/" class="nav-link px-0"  id="item" >
+                  <fa-icon [icon]="icon_home"></fa-icon>
+                  <span class="ms-1 d-none d-sm-inline">Home</span>
+                </button>
+              </li>
+              <li class="nav-item" id="menu-item">
+                <button routerLink="/iniciativas"   class="nav-link px-0"  id="item" >
+                  <fa-icon [icon]="icon_iniciativa"></fa-icon>
+                  <span class="ms-1 d-none d-sm-inline">Iniciativas</span>
+                </button>
+              </li>
+              <li class="nav-item" id="menu-item">
+                <button routerLink="/projetos" class="nav-link px-0 " id="item" >
+                  <fa-icon [icon]="icon_projeto"></fa-icon>
+                  <span class="ms-1 d-none d-sm-inline">Projetos</span>
+                </button>
+              </li>
+              <li class="nav-item" id="menu-item">
+                <button routerLink="/relatorio" href="#" class="nav-link px-0" id="item" >
+                  <fa-icon [icon]="icon_relatorio"></fa-icon>
+                  <span class="ms-1 d-none d-sm-inline">Relatório</span>
+                </button>
+              </li>
+              <li class="nav-item" id="menu-item">
+                <button routerLink="/legislacao" href="#" class="nav-link px-0" id="item" >
+                  <fa-icon [icon]="icon_legislacao"></fa-icon>
+                  <span class="ms-1 d-none d-sm-inline">Legislação</span>
+                </button>
+              </li>
+              <li class="nav-item" id="menu-item">
+                <button href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0  dropdown-toggle dropdown-menu-center ">
+                  <fa-icon [icon]="icon_sistema"></fa-icon>
+                  <span class="ms-1 d-none d-sm-inline">Sistema</span>
+                </button>
+                <ul class="collapse nav flex-column submenu mt-2" id="submenu1" data-bs-parent="#menu">
+
+                    <ul class="btn-toggle-nav list-unstyled p-3 d-flex flex-column" style="background-color: #0000002c; ">
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Acordos Gerais</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Agentes</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Contatos</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Fontes Financeiras</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Instituições Parceiras</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Moedas</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Natureza dos Recursos</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Objetivos Estratégicos</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Países</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Prestação de Contas(roteiros) </a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Subunidades</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Unidades Corresponsáveis(externas)</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Unidades(projetos transferidos)</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Unidades Responsáveis</a></li>
+                      <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Iniciativas e Projetos(enums)</a></li>
+                      <li id="submenu-item"><a href="#" class="link-light rounded">Colegiados(enums)</a></li>
+                    </ul>
+
+                </ul>
+
+              </li>
+              <li class="nav-item" id="menu-item">
+                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0  dropdown-toggle">
+                  <fa-icon [icon]="icon_seguranca"></fa-icon>
+                  <span class="ms-1 d-none d-sm-inline">Segurança</span>
+                </a>
+                <ul class="collapse nav flex-column submenu mt-2" id="submenu2" data-bs-parent="#menu">
+                  <ul class="btn-toggle-nav list-unstyled p-3 d-flex flex-column align-items-start" style="background-color: #0000002c;">
+                    <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Acordos Gerais</a></li>
+                    <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Agentes</a></li>
+                    <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Contatos</a></li>
+                    <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Fontes Financeiras</a></li>
+                    <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Instituições Parceiras</a></li>
+                    <li class="mb-3" id="submenu-item"><a href="#" class="link-light rounded">Moedas</a></li>
+                    <li id="submenu-item"><a href="#" class="link-light rounded">Unidades Corresponsáveis(externas)</a></li>
+                  </ul>
+                </ul>
+              </li>
+              <li class="nav-item" id="menu-item">
+                <button routerLink="/colegiado" href="#" class="nav-link px-0" id="item" >
+                  <fa-icon [icon]="icon_colegiado"></fa-icon>
+                  <span class="ms-1 d-none d-sm-inline">Colegiado</span>
+                </button>
+              </li>
+              <li class="nav-item mb-5" id="menu-item">
+                <button routerLink="/ajuda" href="#" class="nav-link px-0" id="item" >
+                  <fa-icon [icon]="icon_ajuda"></fa-icon>
+                  <span class="ms-1 d-none d-sm-inline">Ajuda</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+<body style="margin-top: 70px;">
+  <div class="d-flex justify-content-end w-auto bg-danger">
+    <!-- BUTTONS ACTIONS -->
+    <div class="side-content" style="color: var(--icon);">
+      <p>Seja bem-vindo, Usuário</p>
+      <div class="side-content-icons-right">
+      <fa-icon [icon]="icon_foto_de_perfil"></fa-icon>
+
+      <!-- MODAL -->
+      <button type="button" class="btn m-0 p-0 side-content-icons-right" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="border: none;">
+        <fa-icon [icon]="icon_sininho"></fa-icon>
+      </button>
+      <div class="modal fade" id="staticBackdrop"  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Notificações</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row p-0 m-0">
+                <div class="col-12 p-0 pt-0 w-100 ">
+                  <!-- NOTIFICAÇÕES - ALERTA ESPECIAL -->
+                  <button class="btn p-0 m-0" style="border: none;">
+                    <div class="rounded-2 d-flex flex-row card-alert pt-3 p-3" style="border: 1px solid #c6c7c9">
+                      <div class="row w-100 m-0 p-0">
+                        <div class="col-12 w-100 d-flex flex-row align-items-center justify-content-between m-0 p-0">
+                          <div class="d-flex flex-row align-items-center gap-2">
+                            <fa-icon [icon]="icon_exclamacao"></fa-icon>
+                            <h3>Alerta especial</h3>
+                          </div>
+                          <div class="circle-card-alert p-1 rounded-pill bg-secondary">
+                            <p class="text-white p-0">213</p>
+                          </div>
+                        </div>
+                        <div class="col-12 w-100 text-align-left m-0 p-0">
+                          <p class="text-black " id="text-card-alert">Ocorreências que exigem sua atenção imediata</p>
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                  </div>
+                </div>
+                  <!-- NOTIFICAÇÕES - ALERTAS NORMAIS -->
+                  <div class="col-12  p-0 pt-1 w-100">
+                    <button class="btn p-0 m-0" style="border: none;">
+                      <div class="rounded-2 d-flex flex-column w-100 p-3" style="border: 1px solid #c6c7c9">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class="text-black">20/02/2022</p>
+                          </div>
+                          <div class="col-12">
+                            <p class="text-black " id="text-card-notification"><span class="fw-semibold">Atualização realizada com sucesso no Projeto:</span> Projeto BRA/22/G71 - Fortalecimento Institucional para o Fortalecimento do Protocolo de Montreal - Fase IX</p>
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="col-12 p-0 pt-1 w-100">
+                    <button class="btn p-0 m-0" style="border: none;">
+                      <div class="rounded-2 d-flex flex-column w-100 p-3" style="border: 1px solid #c6c7c9">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class="text-black">20/02/2022</p>
+                          </div>
+                          <div class="col-12">
+                          <p class="text-black" id="text-card-notification"><span class="fw-semibold">Atualização realizada com sucesso no Projeto:</span> Projeto BRA/22/G71 - Fortalecimento Institucional para o Fortalecimento do Protocolo de Montreal - Fase IX</p>
+                        </div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="col-12 p-0 pt-1 pb-0 w-100">
+                    <button class="btn p-0 m-0" style="border: none;">
+                      <div class="rounded-2 d-flex flex-column w-100 p-3" style="border: 1px solid #c6c7c9">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class="text-black">20/02/2022</p>
+                          </div>
+                          <div class="col-12">
+                          <p class="text-black" id="text-card-notification"><span class="fw-semibold">Atualização realizada com sucesso no Projeto: </span> Projeto BRA/22/G71 - Fortalecimento Institucional para o Fortalecimento do Protocolo de Montreal - Fase IX</p>
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            style="border: none; background-color: transparent; margin:0; padding:0;"
+            (click)="getTheme('light')"
+            class="side-content-icons-right"
+            >
+            <fa-icon [icon]="icon_sol" id="btn-light"></fa-icon>
+          </button>
+          <button
+            style="border: none; background-color: transparent; margin:0; padding:0;"
+            (click)="getTheme('dark')"
+            class="side-content-icons-right"
+            >
+            <fa-icon [icon]="icon_lua" id="btn-dark"></fa-icon>
+          </button>
+        </div>
+    </div>
+  </div>
+</body>

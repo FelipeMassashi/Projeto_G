@@ -1,0 +1,158 @@
+*{
+  transition: 0s all;
+}
+
+body{
+  margin-top: 43px;
+  width: 87%;
+  margin: 43px auto 0;
+}
+
+.card{
+  margin-top: 29px;
+  box-sizing: border-box;
+  height: auto;
+  border: 2px solid #00000034;
+  box-shadow: 0px 4px 10px 2px rgba(161, 161, 161, 0.25);
+  border-radius: 15px;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.sub-card{
+  border: 1px solid #BFBFBF;
+  border-radius: 15px;
+}
+
+.card-content{
+  margin-bottom: 10px;
+}
+
+
+.card-content p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 16px
+}
+
+.title-container{
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--font-title-main);
+}
+
+.icon-container{
+  font-size: 40px;
+  color: black;
+  position: relative;
+}
+
+.side-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+}
+
+.side-content p{
+  font-size: 20px;
+  color: var(--icon);
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-content-icons-right{
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  color: var(--icon);
+}
+
+.side-content-icons-right fa-icon{
+  margin-right: 14px;
+}
+
+.side-content-icons-right #btn-light{
+  margin-right: 0px;
+}
+
+.side-content-icons-right #btn-dark{
+  margin-right: 0px;
+}
+
+
+.modal{
+  color: rgb(0, 0, 0);
+}
+
+.modal-title{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.circle-close{
+  background-color: rgb(204, 204, 204);
+  width: 35px;
+  height: 35px;
+  padding: 9px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.btn-close{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 21%;
+  top: 43%;
+}
+
+.card-alert fa-icon, .card-alert h3{
+  color: red;
+}
+
+.card-alert fa-icon{
+  font-size: 30px;
+  margin: 0;
+}
+
+.card-alert h3{
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-alert p{
+  font-size: 20px;
+}
+
+.circle-card-alert{
+  width: 10%;
+  height: 25px;
+}
+
+.circle-card-alert p {
+  font-size: 15px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  height: 18px;
+}
+
+#text-card-alert{
+  font-size: 17px;
+  text-align: start;
+}
+
+.text-black span{
+  font-weight: 100;
+}
+
+#text-card-notification{
+  font-size: 17px;
+}

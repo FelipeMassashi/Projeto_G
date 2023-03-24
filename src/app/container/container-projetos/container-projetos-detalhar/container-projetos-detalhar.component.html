@@ -1,0 +1,1675 @@
+<body style="margin-top: -53px;">
+  <div class="d-flex gap-3 align-items-center">
+    <fa-icon [icon]="icon_projeto" class="m-0 icon-container" style="color: var(--font-title-main);" id="icon-toBar"></fa-icon>
+    <p style="font-size: 35px;
+    font-weight: 600;
+    color: var(--font-title-main); margin: 0; ">Projeto</p>
+  </div>
+  <div class="row row-main">
+
+    <!-- ====================== NGIF COM LOADING ====================== -->
+    <div *ngIf="loading; else detalhar_projeto">
+      <div class="row row-main">
+        <div class="col-8">
+          <div class="card w-100 p-3" style="margin-top: 29px;" aria-hidden="true">
+            <div class="d-flex flex-row gap-2 justify-content-center mb-3 mt-3 placeholder-glow">
+              <h3 class="placeholder col-1 placeholder-sm"></h3>
+              <p class="placeholder col-3 placeholder-sm"></p>
+            </div>
+            <div class="d-flex flex-row gap-2 justify-content-center placeholder-glow">
+              <h3 class="placeholder col-2 placeholder-btn"></h3>
+              <h3 class="placeholder col-2 placeholder-btn"></h3>
+              <h3 class="placeholder col-2 placeholder-btn"></h3>
+              <h3 class="placeholder col-2 placeholder-btn"></h3>
+              <h3 class="placeholder col-2 placeholder-btn"></h3>
+              <h3 class="placeholder col-2 placeholder-btn"></h3>
+            </div>
+            <div class="sub-card p-3 placeholder-glow">
+              <h3 class="placeholder">Nome</h3>
+              <p class="text-content placeholder col-12 placeholder-lg"></p>
+              <p class="placeholder col-1 placeholder-sm"></p>
+              <div class="line"></div>
+              <div class="d-flex flex-row flex-wrap gap-5">
+                <div>
+                  <h3 class="placeholder">Processo SEI</h3>
+                  <p class="placeholder col-12 placeholder-sm"></p>
+                </div>
+                <div>
+                  <h3 class="placeholder">Data da situação</h3>
+                  <p class="placeholder col-12 placeholder-sm"></p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="d-flex flex-row flex-wrap gap-2 w-100">
+                <div class="width-dados">
+                  <h3 class="placeholder">Data de assinatura</h3>
+                  <p class="placeholder col-8 placeholder-sm"></p>
+                </div>
+                <div class="width-dados">
+                  <h3 class="placeholder">Início de vigência</h3>
+                  <p class="placeholder col-8 placeholder-sm"></p>
+                </div>
+                <div class="width-dados">
+                  <h3 class="placeholder">Término da vigência (original)</h3>
+                  <p class="placeholder col-8 placeholder-sm"></p>
+                </div>
+                <div class="width-dados d-flex flex-column">
+                  <h3 class="placeholder">Término da vigência (atual)</h3>
+                  <p class="placeholder col-8 placeholder-sm">30/08/202</p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="d-flex flex-column">
+                <h3 class="placeholder col-3">Descrição</h3>
+                <p class="text-content placeholder col-12">Desenvolvimento de geoserviços, a produção e o compartilhamento de dados, imagens, informações e conhecimento gerados sobre a Amazônia Legal, para as aplicações do interesse de cada um dos partícipes. Estabelecimento de intercâmbio de informações ambientais e territoriais sobre a Amazônia.</p>
+                <h3 class="placeholder col-3">Objetivo geral</h3>
+                <p class="text-content text-content placeholder col-12">Definição de áreas operacionais de interesse para monitoramento; elaboração do plano de aquisição de imagens radar em conjunto com as coordenações operacionais das unidades regionais do Censipam; Disponibilização das imagens em catálogo para análise e interpretação das equipes; Edição de um banco de dados único para mapeamento dos alertas; Relatório de avaliação das detecções e suas repercussões em termos de embargos.</p>
+                <h3 class="placeholder col-3">Objetivos específicos</h3>
+                <p class="text-content text-content placeholder col-12">Estabelecimento de intercâmbio de informações ambientais e territoriais sobre a Amazônia, por meio do desenvolvimento de geoserviços, a produção e o compartilhamento de dados, imagens, informações e conhecimento gerados sobre a Amazônia Legal, para aplicações no interesse de cada um dos partícipes.</p>
+                <h3 class="placeholder col-3">Iniciativa vinculada</h3>
+                <p class="text-content placeholder col-1 m-0 p-0">Não</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card p-3">
+            <div class="content-bottom m-0 p-0 placeholder-glow">
+              <div class="d-flex justify-content-center">
+                <h3 class="mb-3 title-content-detalhes placeholder placeholder-sm">Status</h3>
+              </div>
+              <div class="sub-card p-3">
+                <div class="d-flex flex-row gap-3 justify-content-center mb-3">
+                  <div class="w-100 item flex-nowrap">
+                    <h3 class="title-content-detalhes-situacao placeholder col-12 placeholder-sm">Situação</h3>
+                    <p class="placeholder col-12 placeholder-sm"></p>
+                  </div>
+                  <div class="w-100 item flex-nowrap">
+                    <h3 class="title-content-detalhes-situacao placeholder col-12 placeholder-sm">Classificação</h3>
+                    <p class="placeholder col-12 placeholder-sm"></p>
+                  </div>
+                </div>
+                <div class="row p-0 m-0 ">
+                  <div class="col m-0 p-0 me-3">
+                    <h3 class="title-content-detalhes-situacao placeholder col-12 placeholder-sm">Atalhos</h3>
+                    <p class="placeholder col-12 placeholder-sm"></p>
+                  </div>
+                  <div class="col m-0 p-0">
+                    <h3 class="title-content-detalhes-situacao placeholder col-12 placeholder-sm">Execução</h3>
+                    <p class="placeholder col-12 placeholder-sm"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="card p-3 pb-0 mb-2 mt-2">
+              <div class="content-top placeholder-glow">
+                <h3 class="placeholder placeholder-btn-aside mb-3"></h3>
+                <!-- Fazer marcacao para o coordenador -->
+                <div class="d-flex flex-column justify-content-center w-100">
+                  <p class="placeholder col-12 placeholder-sm"></p>
+                  <p class="placeholder col-12 placeholder-sm"></p>
+                  <p class="placeholder col-12 placeholder-sm"></p>
+                  <p class="placeholder col-12 placeholder-sm"></p>
+                  <p class="placeholder col-12 placeholder-sm"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card p-3 pb-0 mb-2 mt-0">
+              <div class="content-bottom placeholder-glow">
+                <h3 class="placeholder placeholder-btn-aside"></h3>
+                <p class="placeholder col-12 placeholder-sm"></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TEMPLATE CARREGADO ================ -->
+    <ng-template #detalhar_projeto>
+
+      <!-- ***COLUNA PRINCIPAL - COL-8*** -->
+      <div class="col-8">
+        <div class="card w-100 p-3" style="margin-top: 29px;">
+          <div class="d-flex flex-row gap-2 justify-content-center mb-3 mt-3">
+            <h3>Código do Projeto -</h3>
+            <p>ACT CENSIPAM/IBAMA</p>
+          </div>
+
+          <!-- ///ITEMS DE NAVEGAÇÃO\\\ -->
+          <tabset type="pills" class="box" customClass="customClassContainer" id="teste">
+
+            <!-- ******* VISÃO GERAL ******* -->
+            <tab heading="Visão geral" class="button-nav" customClass="customClass">
+              <div class="sub-card p-3">
+
+                <h3>Nome</h3>
+                <p tooltip="teseeeeeeee" >Acordo de Cooperação Técnica do Centro Gestor e Operacional do Sistema de Proteção da Amazônia – Censipam e o Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis – Ibama</p>
+
+                <div class="line"></div>
+
+                <div class="d-flex flex-row flex-wrap gap-5">
+                  <div>
+                    <h3>Código</h3>
+                    <p>ACT CENSIPAM/IBAMA</p>
+                  </div>
+                  <div>
+                    <h3>Processo SEI</h3>
+                    <p>60090.000252/2018-36</p>
+                  </div>
+                  <div>
+                    <h3>Data da situação</h3>
+                    <p>13/10/2022</p>
+                  </div>
+                </div>
+
+                <div class="line"></div>
+
+                <!-- MODAL 1-->
+                <div class="row m-0 p-0">
+                  <div class="col m-0 p-0">
+                    <h3>Data da assinatura</h3>
+                    <p>29/08/2018</p>
+                  </div>
+                  <div class="col">
+                    <h3>Início da vigência</h3>
+                    <p>29/08/2018</p>
+                  </div>
+                  <div class="col">
+                    <h3>Término da vigência (original)</h3>
+                    <p>28/08/2023</p>
+                  </div>
+                  <div class="col">
+                    <div>
+                      <div class="d-flex flex-row gap-1">
+                        <h3>Término da vigência (atual)</h3>
+                        <button type="button" class="btn-modal ps-2 pe-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          1
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Histórico de prorrogação da Data de Vencimento</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <ul class="list-group list-father p-0 m-0">
+                                  <li class="list-group-item list-son line-bottom">
+                                    <div class="row m-0 p-0 ">
+                                      <div class="col-2 m-0 p-0">
+                                        <div class="d-flex flex-row justify-content-center gap-1">
+                                          <p class="text-content-modal-title text-black">Data/Horário</p>
+                                        </div>
+                                      </div>
+                                      <div class="col-2 m-0 p-0">
+                                        <div class="d-flex flex-row justify-content-center gap-1">
+                                          <p class="text-content-modal-title text-black">Data atualizada</p>
+                                        </div>
+                                      </div>
+                                      <div class="col-2 m-0 p-0">
+                                        <div class="d-flex flex-row justify-content-center gap-1">
+                                          <p class="text-content-modal-title text-black">Data anterior</p>
+                                        </div>
+                                      </div>
+                                      <div class="col-6 m-0 p-0">
+                                        <div class="d-flex flex-row justify-content-center gap-1">
+                                          <p class="text-content-modal-title text-black">Alterado por</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item list-son">
+                                    <div class="row m-0 p-0">
+                                      <div class="col-2 m-0 p-0">
+                                        <div class="d-flex flex-row justify-content-center gap-1">
+                                          <p class="text-content-modal text-black">08/11/2022 11:17:55</p>
+                                        </div>
+                                      </div>
+                                      <div class="col-2 m-0 p-0">
+                                        <div class="d-flex flex-row justify-content-center gap-1">
+                                          <p class="text-content-modal text-black">19/10/2024)</p>
+                                        </div>
+                                      </div>
+                                      <div class="col-2 m-0 p-0">
+                                        <div class="d-flex flex-row justify-content-center gap-1">
+                                          <p class="text-content-modal text-black">-</p>
+                                        </div>
+                                      </div>
+                                      <div class="col-6 m-0 p-0">
+                                        <div class="d-flex flex-row justify-content-center gap-1">
+                                          <p class="text-content-modal text-black">Pedro Henrique de Jesus Sarassua  CPF: 052.577.911-61</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>29/08/2022</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="d-flex flex-column">
+                  <div>
+                    <h3>Descrição</h3>
+                    <p>Desenvolvimento de geoserviços, a produção e o compartilhamento de dados, imagens, informações e conhecimento gerados sobre a Amazônia Legal, para as aplicações do interesse de cada um dos partícipes. Estabelecimento de intercâmbio de informações ambientais e territoriais sobre a Amazônia.</p>
+                  </div>
+                  <div>
+                    <h3>Objetivo geral</h3>
+                    <p>Definição de áreas operacionais de interesse para monitoramento; elaboração do plano de aquisição de imagens radar em conjunto com as coordenações operacionais das unidades regionais do Censipam; Disponibilização das imagens em catálogo para análise e interpretação das equipes; Edição de um banco de dados único para mapeamento dos alertas; Relatório de avaliação das detecções e suas repercussões em termos de embargos</p>
+                  </div>
+                  <div>
+                    <h3>Objetivos específicos</h3>
+                    <p>Estabelecimento de intercâmbio de informações ambientais e territoriais sobre a Amazônia, por meio do desenvolvimento de geoserviços, a produção e o compartilhamento de dados, imagens, informações e conhecimento gerados sobre a Amazônia Legal, para aplicações no interesse de cada um dos partícipes.</p>
+                  </div>
+                  <div>
+                    <h3>Iniciativa vinculada</h3>
+                    <p>Não</p>
+                  </div>
+                </div>
+
+                <div class="line"></div>
+
+                <!--  MODAL 2 & 3-->
+                <div class="d-flex flex-column">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex flex-row gap-2">
+                      <h3>Unidade responsável</h3>
+                      <button type="button" class="btn-modal ps-2 pe-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        1
+                      </button>
+                    </div>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Histórico de alterações da Unidade Responsavel</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul class="list-group list-father p-0 m-0">
+                              <li class="list-group-item list-son line-bottom">
+                                <div class="row m-0 p-0 ">
+                                  <div class="col-2 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal-title text-black">Data/Horário</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-5 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal-title text-black">	Unidade atual</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-2 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal-title text-black">Unidade anterior</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal-title text-black">Alterado por</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="list-group-item list-son">
+                                <div class="row m-0 p-0">
+                                  <div class="col-2 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal text-black">13/10/2022 14:42:40</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-5 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal text-black">Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-2 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal text-black">Secretaria Executiva</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal text-black">José Ari Lacerda Braga  CPF: 286.967.351-53</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>IBAMA - Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div class="d-flex flex-row gap-2">
+                      <h3>Responsável</h3>
+                      <button type="button" class="btn-modal ps-2 pe-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        1
+                      </button>
+                    </div>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Histórico de alterações do Usuário Responsavel</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <ul class="list-group list-father p-0 m-0">
+                              <li class="list-group-item list-son line-bottom">
+                                <div class="row m-0 p-0 ">
+                                  <div class="col-2 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal-title text-black">Data/Horário</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal-title text-black">	Unidade atual</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal-title text-black">Unidade anterior</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-4 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal-title text-black">Alterado por</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="list-group-item list-son">
+                                <div class="row m-0 p-0">
+                                  <div class="col-2 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal text-black">01/11/2022 14:49:15</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal text-black">Nara Vidal Pantoja</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal text-black">José Ari Lacerda Braga</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-4 m-0 p-0">
+                                    <div class="d-flex flex-row justify-content-center gap-1">
+                                      <p class="text-content-modal text-black">Juliana Faria Nunes  CPF: 724.868.131-87</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Nara Vidal Pantoja</p>
+                  </div>
+                  <div>
+                    <h3>Subunidade</h3>
+                    <p>CENIMA - Centro Nacional de Monitoramento e Informações Ambientais</p>
+                  </div>
+                  <div>
+                    <h3>Unidades corresponsáveis (componentes)</h3>
+                    <p>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                  </div>
+                  <div>
+                    <h3>Unidades corresponsáveis (externas)</h3>
+                    <p>Ministério da Defesa</p>
+                  </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="d-flex flex-row flex-wrap gap-5">
+                  <div>
+                    <h3>Valor total do projeto</h3>
+                    <p>R$ 7</p>
+                  </div>
+                  <div>
+                    <h3>Total dos recursos</h3>
+                    <p>R$ 7</p>
+                  </div>
+                  <div>
+                    <h3>Moeda do projeto</h3>
+                    <p>Real (BRL)</p>
+                  </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="d-flex flex-row flex-wrap gap-5">
+                  <div>
+                    <h3>Arranjo de execução</h3>
+                    <p>Não orçamentário</p>
+                  </div>
+                  <div>
+                    <h3>Tipo de relacionamento</h3>
+                    <p>Interinstitucional - Acordo de Cooperação</p>
+                  </div>
+                  <div>
+                    <h3>Modalidade de cooperação</h3>
+                    <p>Cooperação Técnica</p>
+                  </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="d-flex flex-column flex-wrap">
+                  <div>
+                    <h3>Agentes implementadores</h3>
+                    <p>Sem Agente Implementador</p>
+                  </div>
+                  <div>
+                    <h3>Agentes executores</h3>
+                    <p>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                  </div>
+                  <div>
+                    <h3>Instituições parceiras</h3>
+                    <p>Sem instituições parceiras cadastradas</p>
+                  </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="row m-0 p-0 mb-3">
+                  <div class="col m-0 p-0">
+                    <div class="d-flex flex-column">
+                      <div>
+                        <h3>Abrangência</h3>
+                        <p>Regional: NORDESTE, NORTE</p>
+                      </div>
+                      <div>
+                        <h3>Acordos vinculados</h3>
+                        <p>Acordo de Paris</p>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col m-0 p-0">
+                    <div>
+                      <h3>Biomas beneficiados</h3>
+                      <p>Amazônia</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3>Palavras-chave</h3>
+                      <div class="d-flex flex-row gap-2 flex-wrap">
+                        <span class="palavra-chave">geoserviços</span>
+                        <span class="palavra-chave">imagens de satélite</span>
+                        <span class="palavra-chave">amazônia legal</span>
+                        <span class="palavra-chave">radar orbital</span>
+                        <span class="palavra-chave">desmatamento</span>
+                        <span class="palavra-chave">monitoramento</span>
+                        <span class="palavra-chave">censipam</span>
+                        <span class="palavra-chave">mapeamento de alertas</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="row p-0 m-0">
+                  <div class="col p-0 m-0">
+                    <button class="btn btn-inf btn-noborder">
+                      <fa-icon [icon]="icon_plus" style="font-size: 15px;"></fa-icon>
+                      Objetivos estratégicos
+                    </button>
+                  </div>
+                  <div class="col p-0 m-0">
+                    <p class="p-0 m-auto text-end">
+                      <button class="btn btn-inf btn-noborder" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <fa-icon [icon]="icon_plus" style="font-size: 15px;"></fa-icon>
+                        Anotações
+                      </button>
+                    </p>
+                  </div>
+                  <div class="collapse col-12 p-0 m-0" id="collapseExample" style="transition: all .2s;">
+                    <div class="m-0 mt-3 p-0" style="box-shadow: none;">
+                      <label class="card-textarea-text m-0 p-0">Incluir Anotação</label>
+                      <textarea class="form-control mt-3" style="height: 150px;" placeholder="Inclua uma anotação que tenha relação com a aba que está ativa"></textarea>
+                      <button class="btn btn-inf mt-3 btn-noborder" style="float: right;">Salvar anotação</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </tab>
+
+            <!-- ******** RECURSOS ********* -->
+            <tab heading="Recursos" customClass="customClass">
+
+              <div class="sub-card p-3">
+
+                <ul class="list-group mb-5" [ngClass]="{cardDark: statusThemeDark === 'dark'}">
+
+                  <!-- TOPMENU -->
+                  <li class="list-group-item list-group-topbar-rercursos">
+                    <div class="row m-0 p-0">
+                      <div class="col-4 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0">
+                        <p class="m-0 p-0">Fonte financiadora</p>
+                        <fa-icon [icon]="icon_ordenar" style="font-size: 12px;" class="align-self-center"></fa-icon>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0 ">
+                        <p class="m-0 p-0">Origem</p>
+                        <fa-icon [icon]="icon_ordenar" style="font-size: 12px;" class="align-self-center"></fa-icon>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0">
+                        <p class="m-0 p-0">Tipo</p>
+                        <fa-icon [icon]="icon_ordenar" style="font-size: 12px;" class="align-self-center"></fa-icon>
+                      </div>
+                      <div class="col-2 d-flex flex-row  p-0 m-0 justify-content-center gap-1 m-0 p-0">
+                        <p class="m-0 p-0">Natureza</p>
+                        <fa-icon [icon]="icon_ordenar" style="font-size: 12px;" class="align-self-center"></fa-icon>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0">
+                        <p class="m-0 p-0">Valor previsto</p>
+                        <fa-icon [icon]="icon_ordenar" style="font-size: 12px;" class="align-self-center"></fa-icon>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- MENU ITEMS -->
+
+                  <li class="list-group-item list-group-item-recursos" data-bs-toggle="modal" data-bs-target="#Modal1">
+                    <div class="row m-0 p-0">
+                      <div class="col-4 d-flex flex-row p-0 m-0 justify-content-center gap-1 ps-2 pe-2">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">Organização das Nações Unidas para Agricultura e Alimentação</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">Internacional</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">Organismo</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">Contrapartida Não Financeira</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">R$ 127.933</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <div class="modal fade modal-card" id="Modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Modal1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content modal-content-card">
+                        <div class="modal-header modal-header-card">
+                          <h1 class="modal-title fs-5" id="Modal1">Detalhar recurso</h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="sub-card p-3">
+                            <h3>Fonte financiadora</h3>
+                            <p>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+
+                            <div class="line"></div>
+
+                            <div class="d-flex flex-row justify-content-between">
+                              <div>
+                                <h3>Natureza do recurso</h3>
+                                <p>Contrapartida Não Financeira</p>
+                              </div>
+                              <div>
+                                <h3>Origem da fonte</h3>
+                                <p>Nacional</p>
+                              </div>
+                              <div>
+                                <h3>Tipo de fonte</h3>
+                                <p>Governo Federal</p>
+                              </div>
+                            </div>
+
+                            <div class="line"></div>
+
+                            <div class="d-flex flex-row justify-content-between">
+                              <div>
+                                <h3>Fonte financiadora</h3>
+                                <p>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                              </div>
+                              <div>
+                                <h3>Valor previsto</h3>
+                                <p>R$ 120.452</p>
+                              </div>
+                            </div>
+
+                            <div class="line me-3 ms-3"></div>
+
+                            <div class="d-flex flex-row justify-content-between">
+                              <div>
+                                <h3>Agente implementador</h3>
+                                <p>Sem Agente Implementador</p>
+                              </div>
+                              <div>
+                                <h3>Agente executor</h3>
+                                <p>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="line mt-5"></div>
+
+                          <div class="pt-0 d-flex flex-row justify-content-between">
+                            <button type="button" class="btn btn-inf btn-noborder" data-bs-dismiss="modal">Voltar</button>
+                            <div class="d-flex gap-3">
+                              <button type="button" class="btn btn-inf btn-noborder" >Editar</button>
+                              <button type="button" class="btn btn-inf btn-noborder btn-red">Excluir</button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <li class="list-group-item list-group-item-recursos" data-bs-toggle="modal" data-bs-target="#Modal2">
+                    <div class="row m-0 p-0">
+                      <div class="col-4 d-flex flex-row p-0 m-0 justify-content-center gap-1 ps-2 pe-2">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">Agência Nacional de Águas</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">Nacional</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">Governo Federal</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">Doação</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">R$ 147.310</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <div class="modal fade modal-card" id="Modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Modal2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content modal-content-card">
+                        <div class="modal-header modal-header-card">
+                          <h1 class="modal-title fs-5" id="Modal2">Detalhar recurso</h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="sub-card p-3">
+                            <h3>modalllllll2222222222</h3>
+                            <p>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+
+                            <div class="line"></div>
+
+                            <div class="d-flex flex-row justify-content-between">
+                              <div>
+                                <h3>Natureza do recurso</h3>
+                                <p>Contrapartida Não Financeira</p>
+                              </div>
+                              <div>
+                                <h3>Origem da fonte</h3>
+                                <p>Nacional</p>
+                              </div>
+                              <div>
+                                <h3>Tipo de fonte</h3>
+                                <p>Governo Federal</p>
+                              </div>
+                            </div>
+
+                            <div class="line"></div>
+
+                            <div class="d-flex flex-row justify-content-between">
+                              <div>
+                                <h3>Fonte financiadora</h3>
+                                <p>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                              </div>
+                              <div>
+                                <h3>Valor previsto</h3>
+                                <p>R$ 120.452</p>
+                              </div>
+                            </div>
+
+                            <div class="line me-3 ms-3"></div>
+
+                            <div class="d-flex flex-row justify-content-between">
+                              <div>
+                                <h3>Agente implementador</h3>
+                                <p>Sem Agente Implementador</p>
+                              </div>
+                              <div>
+                                <h3>Agente executor</h3>
+                                <p>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="line mt-5"></div>
+
+                          <div class="pt-0 d-flex flex-row justify-content-between">
+                            <button type="button" class="btn btn-inf btn-noborder" data-bs-dismiss="modal">Voltar</button>
+                            <div class="d-flex gap-3">
+                              <button type="button" class="btn btn-inf btn-noborder" >Editar</button>
+                              <button type="button" class="btn btn-inf btn-noborder btn-red">Excluir</button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <li class="list-group-item list-group-item-recursos Modal3" data-bs-toggle="modal" data-bs-target="#Modal3">
+                    <div class="row m-0 p-0">
+                      <div class="col-4 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item ps-2 pe-2">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">ITAIPU-Diretoria Brasileira</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">Nacional</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">Entidades Privadas</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">Cooperação Técnica</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-recursos-item d-flex flex-column justify-content-center">R$ 185.230</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <div class="modal fade modal-card" id="Modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Modal3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content modal-content-card">
+                        <div class="modal-header modal-header-card">
+                          <h1 class="modal-title fs-5" id="Modal3">Detalhar recurso</h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="sub-card p-3">
+                            <h3>MODAL 33333333333</h3>
+                            <p>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+
+                            <div class="line"></div>
+
+                            <div class="d-flex flex-row justify-content-between">
+                              <div>
+                                <h3>Natureza do recurso</h3>
+                                <p>Contrapartida Não Financeira</p>
+                              </div>
+                              <div>
+                                <h3>Origem da fonte</h3>
+                                <p>Nacional</p>
+                              </div>
+                              <div>
+                                <h3>Tipo de fonte</h3>
+                                <p>Governo Federal</p>
+                              </div>
+                            </div>
+
+                            <div class="line"></div>
+
+                            <div class="d-flex flex-row justify-content-between">
+                              <div>
+                                <h3>Fonte financiadora</h3>
+                                <p>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                              </div>
+                              <div>
+                                <h3>Valor previsto</h3>
+                                <p>R$ 120.452</p>
+                              </div>
+                            </div>
+
+                            <div class="line me-3 ms-3"></div>
+
+                            <div class="d-flex flex-row justify-content-between">
+                              <div>
+                                <h3>Agente implementador</h3>
+                                <p>Sem Agente Implementador</p>
+                              </div>
+                              <div>
+                                <h3>Agente executor</h3>
+                                <p>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="line mt-5"></div>
+
+                          <div class="pt-0 d-flex flex-row justify-content-between">
+                            <button type="button" class="btn btn-inf btn-noborder" data-bs-dismiss="modal">Voltar</button>
+                            <div class="d-flex gap-3">
+                              <button type="button" class="btn btn-inf btn-noborder" >Editar</button>
+                              <button type="button" class="btn btn-inf btn-noborder btn-red">Excluir</button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+
+                <div class="line"></div>
+
+                <div class="row p-0 m-0 mb-3 ps-3 pe-3">
+                  <div class="col-4 m-0 p-0">
+                    <div class="d-flex flex-column gap-2">
+                      <div>
+                        <h3 class="p-0 m-0">Contrapartida não financeira</h3>
+                        <p class="p-0 m-0">R$ 127.933</p>
+                      </div>
+                      <div>
+                        <h3 class="p-0 m-0">Doação</h3>
+                        <p class="p-0 m-0">R$ 147.310</p>
+                      </div>
+                      <div>
+                        <h3 class="p-0 m-0">Cooperação Técnica</h3>
+                        <p class="p-0 m-0">R$ 185.230</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 m-0 p-0 ps-5">
+                    <div class="d-flex flex-column gap-2">
+                      <div>
+                        <h3 class="p-0 m-0">Financeiro</h3>
+                        <p class="p-0 m-0">R$ 1.091.020</p>
+                      </div>
+                      <div>
+                        <h3 class="p-0 m-0">Não Financeiro</h3>
+                        <p class="p-0 m-0">R$ 0</p>
+                      </div>
+                      <div>
+                        <h3 class="p-0 m-0">Recursos não Utilizados</h3>
+                        <p class="p-0 m-0">R$ 0</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 m-0 p-0">
+                    <div class="d-flex flex-column gap-2">
+                      <div class="align-self-end">
+                        <h3 class="p-0 m-0">Total dos Recursos</h3>
+                        <p class="p-0 m-0" style="font-size: 25px;">R$ 1.091.020</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="row p-0 m-0">
+                  <div class="col p-0 m-0">
+                    <p class="p-0 m-auto text-end">
+                      <button class="btn btn-inf btn-noborder" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                        <fa-icon [icon]="icon_plus" style="font-size: 15px;"></fa-icon>
+                        Anotações
+                      </button>
+                    </p>
+                  </div>
+                  <div class="collapse col-12 p-0 m-0" id="collapseExample1" style="transition: all .2s;">
+                    <div class="m-0 mt-3 p-0" style="box-shadow: none;">
+                      <label class="card-textarea-text m-0 p-0">Incluir Anotação</label>
+                      <textarea class="form-control mt-3" style="height: 150px;" placeholder="Inclua uma anotação que tenha relação com a aba que está ativa"></textarea>
+                      <button class="btn btn-inf mt-3 btn-noborder" style="float: right;">Salvar anotação</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-inf btn-noborder mt-3">
+                <fa-icon [icon]="icon_plus"></fa-icon>
+                Recurso
+              </button>
+
+
+            </tab>
+
+            <!-- ******** COMPONENTES ********* -->
+            <tab heading="Componentes" customClass="customClass">
+              <div class="sub-card p-3">
+
+                <ul class="list-group mb-5" [ngClass]="{cardDark: statusThemeDark === 'dark'}">
+
+                  <!-- TOPMENU -->
+                  <li class="list-group-item list-group-topbar-rercursos">
+                    <div class="row m-0 p-0">
+                      <div class="col-1 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0">
+                        <p class="m-0 p-0">Número</p>
+                        <fa-icon [icon]="icon_ordenar" style="font-size: 12px;" class="align-self-center"></fa-icon>
+                      </div>
+                      <div class="col-9 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0 ">
+                        <p class="m-0 p-0">Nome do componente</p>
+                        <fa-icon [icon]="icon_ordenar" style="font-size: 12px;" class="align-self-center"></fa-icon>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0">
+                        <p class="m-0 p-0">Valor previsto</p>
+                        <fa-icon [icon]="icon_ordenar" style="font-size: 12px;" class="align-self-center"></fa-icon>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- MENU ITEMS -->
+                  <li class="list-group-item list-group-item-recursos">
+                    <div class="row m-auto">
+                      <div class="m-auto col-1 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center h-100">1</p>
+                      </div>
+                      <div class="col-9 d-flex flex-row p-0 m-0 justify-content-start gap-1">
+                        <p class="text-componente-item d-flex flex-column m-0 ms-4 me-4 p-0 h-100">	Realizar reuniões prévias para definir cenários de monitoramento para o ciclo subsequente de nuvens.</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center h-100">R$ 50.25</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-recursos">
+                    <div class="row m-0 p-0">
+                      <div class="col-1 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">2</p>
+                      </div>
+                      <div class="col-9 d-flex flex-row p-0 m-0 justify-content-start gap-1">
+                        <p class="text-componente-item d-flex flex-column m-0 p-0 ms-4 me-4">Realizar reuniões pós-ciclo de nuvens para avaliação de resultados.</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0 ">R$ 450.780</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-recursos">
+                    <div class="row m-0 p-0">
+                      <div class="col-1 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">3</p>
+                      </div>
+                      <div class="col-9 d-flex flex-row p-0 m-0 justify-content-start gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column  m-0 p-0 ms-4 me-4">Definir a política de distribuição dos alertas de desmatamento.</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">R$ 180.450</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-recursos">
+                    <div class="row m-0 p-0">
+                      <div class="col-1 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">4</p>
+                      </div>
+                      <div class="col-9 d-flex flex-row p-0 m-0 justify-content-start gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column  m-0 p-0 ms-4 me-4">Enviar ao Censipam as informações resultantes das intervenções em campo.</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">R$ 250.120</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-recursos">
+                    <div class="row m-0 p-0">
+                      <div class="col-1 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">5</p>
+                      </div>
+                      <div class="col-9 d-flex flex-row p-0 m-0 justify-content-start gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column  m-0 p-0 ms-4 me-4">Aprimorar os parâmetros dos dados a serem gerados pelo Censipam e encaminhados para o IBAMA.</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">R$ 180.852</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-recursos">
+                    <div class="row m-0 p-0">
+                      <div class="col-1 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">6</p>
+                      </div>
+                      <div class="col-9 d-flex flex-row p-0 m-0 justify-content-start gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column  m-0 p-0 ms-4 me-4">Realizar capitação em radar.</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">R$ 18.450</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-recursos">
+                    <div class="row m-0 p-0">
+                      <div class="col-1 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">7</p>
+                      </div>
+                      <div class="col-9 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column justify-content-start m-0 p-0 ms-4 me-4">Compartilhamento diário, via geoserviço, dos dados do DETER do ano corrente.</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 list-group-item-item">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">R$ 150.450</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="line"></div>
+
+                <div class="mb-3 text-end pe-3">
+                  <h3 class="p-0 m-0">Total do projeto</h3>
+                  <p class="p-0 m-0 text-end" style="font-size: 25px;">R$ 1.258.120</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="row p-0 m-0">
+                  <div class="col p-0 m-0">
+                    <p class="p-0 m-auto text-end">
+                      <button class="btn btn-inf btn-noborder" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                        <fa-icon [icon]="icon_plus" style="font-size: 15px;"></fa-icon>
+                        Anotações
+                      </button>
+                    </p>
+                  </div>
+                  <div class="collapse col-12 p-0 m-0" id="collapseExample1" style="transition: all .2s;">
+                    <div class="m-0 mt-3 p-0" style="box-shadow: none;">
+                      <label class="card-textarea-text m-0 p-0">Incluir Anotação</label>
+                      <textarea class="form-control mt-3" style="height: 150px;" placeholder="Inclua uma anotação que tenha relação com a aba que está ativa"></textarea>
+                      <button class="btn btn-inf mt-3 btn-noborder" style="float: right;">Salvar anotação</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-inf btn-noborder mt-3">
+                <fa-icon [icon]="icon_plus"></fa-icon>
+                Componente
+              </button>
+            </tab>
+
+            <!-- ******** EXECUÇÃO ********** -->
+            <tab heading="Execução" customClass="customClass">Execução</tab>
+
+            <!-- ********* ANOTAÇÕES ********* -->
+            <tab heading="Anotações" customClass="customClass">
+              <div class="sub-card p-3">
+                <ul class="list-group mb-5" [ngClass]="{cardDark: statusThemeDark === 'dark'}">
+
+                  <!-- TOPMENU -->
+                  <li class="list-group-item list-group-topbar-rercursos">
+                    <div class="row m-0 p-0">
+                      <div class="col-1 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0">
+                        <p class="m-0 p-0">Data</p>
+                        <fa-icon [icon]="icon_ordenar" style="font-size: 12px;" class="align-self-center"></fa-icon>
+                      </div>
+                      <div class="col-5 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0 ">
+                        <p class="m-0 p-0">Mensagem</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0">
+                        <p class="m-0 p-0">Incluído por</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0">
+                        <p class="m-0 p-0">Aba</p>
+                        <fa-icon [icon]="icon_ordenar" style="font-size: 12px;" class="align-self-center"></fa-icon>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1 m-0 p-0">
+                        <p class="m-0 p-0">Situção</p>
+                        <fa-icon [icon]="icon_ordenar" style="font-size: 12px;" class="align-self-center"></fa-icon>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- MENU ITEMS -->
+                  <li class="list-group-item list-group-item-recursos">
+                    <div class="row m-auto">
+                      <div class="m-auto col-1 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center h-100">23/11/2022</p>
+                      </div>
+                      <div class="col-5 d-flex flex-row p-0 m-0 justify-content-start gap-1">
+                        <p class="text-componente-item d-flex flex-column m-0 ms-4 me-4 p-0 h-100">PROJETO CONCLUÍDO MIGRADO DO APREX DATA:23/11/2022</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center h-100">Fernanda Maria Ferreira dos Santos</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center h-100">GERAL</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center h-100">Pendente</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-recursos">
+                    <div class="row m-0 p-0">
+                      <div class="col-1 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0">24/11/2022</p>
+                      </div>
+                      <div class="col-5 d-flex flex-row p-0 m-0 justify-content-start gap-1">
+                        <p class="text-componente-item d-flex flex-column m-0 p-0 ms-4 me-4">Tesatando a minha aba de anotações.</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0 ">Felipe Massashi</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0 ">COMPONENTES</p>
+                      </div>
+                      <div class="col-2 d-flex flex-row p-0 m-0 justify-content-center gap-1">
+                        <p class="text-componente-item d-flex flex-column justify-content-center m-0 p-0 ">R$ 450.780</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </tab>
+
+            <!-- ********* ARQUIVOS ********** -->
+            <tab heading="Arquivos" customClass="customClass">Arquivos</tab>
+          </tabset>
+        </div>
+      </div>
+
+      <!-- ***COLUNA DE FERRAMENTAIS - COL-4*** -->
+      <div class="col-4">
+
+        <!-- ///CARD SUPERIOR - STATUS\\\ -->
+        <div class="card p-3 p-0" style="margin-top: 29px;">
+          <h3 class="mb-3 title-content-detalhes">Status</h3>
+          <div class="sub-card p-3">
+            <div class="d-flex flex-row gap-3 justify-content-center mb-3">
+
+              <!-- /*/*/* SITUAÇÃO *\*\*\ -->
+              <div class="w-100 item flex-nowrap">
+                <h3 class="title-content-detalhes-situacao">Situação</h3>
+                <button class="badge texto-content-detalhes" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                  <p class="p-0 m-0">Em conclusão</p>
+                </button>
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel4">Histórico das alterações da Situação do projeto</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <ul class="list-group list-father p-0 m-0">
+                          <li class="list-group-item list-son line-bottom">
+                            <div class="row m-0 p-0 ">
+                              <div class="col-2 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal-title text-black">Data</p>
+                                </div>
+                              </div>
+                              <div class="col-5 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal-title text-black">Alterado por</p>
+                                </div>
+                              </div>
+                              <div class="col-2 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal-title text-black">Situação</p>
+                                </div>
+                              </div>
+                              <div class="col-3 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal-title text-black">Justificativa</p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item list-son">
+                            <div class="row m-0 p-0">
+                              <div class="col-2 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal text-black">13/10/2022 14:22:50</p>
+                                </div>
+                              </div>
+                              <div class="col-5 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal text-black">José Ari Lacerda Braga (CPF: 043.179.211-97)</p>
+                                </div>
+                              </div>
+                              <div class="col-2 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal text-black">Em conclusão</p>
+                                </div>
+                              </div>
+                              <div class="col-3 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal text-black">-</p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item list-son">
+                            <div class="row m-0 p-0">
+                              <div class="col-2 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal text-black">11/10/2022 15:42:22</p>
+                                </div>
+                              </div>
+                              <div class="col-5 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal text-black">José Ari Lacerda Braga (CPF: 043.179.211-97)</p>
+                                </div>
+                              </div>
+                              <div class="col-2 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal text-black">Em execução</p>
+                                </div>
+                              </div>
+                              <div class="col-3 m-0 p-0">
+                                <div class="d-flex flex-row justify-content-center gap-1">
+                                  <p class="text-content-modal text-black">-</p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- /*/*/* CLASSIFICAÇÃO *\*\*\ -->
+              <div class="w-100 item flex-nowrap">
+                <h3 class="title-content-detalhes-situacao">Classificação</h3>
+                <span class="badge texto-content-detalhes1">
+                  <p class="p-0 m-0">A vencer - 90 dias</p>
+                </span>
+              </div>
+
+            </div>
+            <div class="d-flex flex-row gap-3 justify-content-center">
+
+              <!-- /*/*/* EXECUÇÃO *\*\*\ -->
+              <div class="w-100 item flex-nowrap">
+                <h3 class="title-content-detalhes-situacao">Execução</h3>
+                <span class="c-circular-progress c-circular-progress--{{ teste3 }}">
+                </span>
+              </div>
+
+              <!-- /*/*/* TIMELINE *\*\*\ -->
+              <div class="w-100 item flex-nowrap">
+                <h3 class="title-content-detalhes-situacao">Timeline</h3>
+                <div class="col">
+                  <div class="mb-2">
+                    <progressbar [value]="teste4" type="secondary" [striped]="true">{{ teste4 }}%</progressbar>
+                    <div class="d-flex flex-row justify-content-between mt-1">
+                      <h3 style="font-size: 14px;">20/03/2023</h3>
+                      <h3 style="font-size: 14px;">12/05/2023</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ///CARD MEIO - EQUIPE\\\ -->
+        <div class="card p-3 mb-2 mt-2 ">
+          <div class="content-top">
+
+            <!-- Modal de equipe -->
+            <button class="btn mb-3 btn-modal-aside" data-bs-toggle="modal" data-bs-target="#exampleModal5">Equipe</button>
+            <div class="modal fade modal-card" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content modal-content-card">
+                  <div class="modal-header modal-header-card">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel5">Detalhamento de Equipe</h1>
+                    <button type="button" class="btn-close btn-close-card" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body modal-body-card modal-scroll">
+                    <div class="d-flex flex-row gap-2 justify-content-center align-itens-center mb-4 mt-3">
+                      <h3 class="m-0 p-0">Código do Projeto -</h3>
+                      <p class="m-0 p-0 modal-content-text">ACT CENSIPAM/IBAMA</p>
+                    </div>
+                    <div class="row m-0 p-0">
+                      <div class="col m-0 pe-2 p-0">
+                        <div class="m-0 p-0 ms-5 sub-card" style="background-color: var(--body);">
+
+                          <div class="circle-icon d-flex justify-content-center align-itens-center align-self-center" style="position: absolute; left: 25%;">
+                            <fa-icon [icon]="icon_responsavel" class="iconResp" style="font-size: 45px;"></fa-icon>
+                          </div>
+
+                          <div class="" style="border-radius: 15px; border-top-left-radius: 45px; border-top-right-radius: 45px; background-color: var(--sub-card);">
+                            <div class="mt-5">
+                              <div class="p-4 pt-5 d-flex flex-column justify-content-center" style="margin-top: 60px;">
+
+                                <div class="text-start mt-4 mb-4 d-flex flex-row gap-2">
+                                  <h3 class="m-0 p-0">
+                                    Responsável do projeto (diretor nacional)
+                                  </h3>
+                                  <div class="circle-equipe"></div>
+                                </div>
+                                <div class="">
+                                  <h3>Nome:</h3>
+                                  <p class="">Nara Vidal Pantoja</p>
+                                </div>
+                                <div>
+                                  <h3 class="">E-mail:</h3>
+                                  <p class="">nara.pantoja@ibama.gov.br</p>
+                                </div>
+                                <div>
+                                  <h3 class="">Unidade:</h3>
+                                  <p class="m-0 ">IBAMA – Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="col m-0 ps-2 p-0">
+                        <div class="m-0 p-0 me-5 sub-card" style="background-color: var(--body);">
+
+                          <div class="circle-icon d-flex justify-content-center align-itens-center align-self-center" style="position: absolute; right: 25%;">
+                            <fa-icon [icon]="icon_substituto" class="iconResp" style="font-size: 45px;"></fa-icon>
+                          </div>
+
+                          <div class="" style="border-radius: 15px; border-top-left-radius: 45px; border-top-right-radius: 45px; background-color: var(--sub-card);">
+                            <div class="p-4 pt-5 d-flex flex-column justify-content-center" style="margin-top: 60px;">
+
+                              <div class="text-start mt-4 mb-4 d-flex flex-row gap-2">
+                                <h3 class="m-0 p-0">
+                                  Responsável substituto (coordenador nacional)
+                                </h3>
+                                <div class="circle-equipe2"></div>
+                              </div>
+                              <div class="">
+                                <h3>Nome:</h3>
+                                <p class="">Daniel Moraes de Freitas</p>
+                              </div>
+                              <div>
+                                <h3 class="">E-mail:</h3>
+                                <p class="">daniel-moraes.freitas@ibama.gov.br</p>
+                              </div>
+                              <div>
+                                <h3 class="">Unidade:</h3>
+                                <p class="m-0 ">IBAMA – Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</p>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="list-group list-father list-father-card p-0 m-0 mt-3 ms-5 me-5">
+                      <li class="list-group-item list-son list-son-card line-bottom">
+                        <div class="row m-0 p-0">
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-title m-0 p-0">Nome</p>
+                            </div>
+                          </div>
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-title m-0 p-0">E-mail</p>
+                            </div>
+                          </div>
+                          <div class="col-2 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-title m-0 p-0">Unidade</p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-son list-son-card ">
+                        <div class="row m-0 p-0">
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">Ana Beatriz de Oliveira</p>
+                            </div>
+                          </div>
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">ana-beatriz.oliveira@ibama.gov.br</p>
+                            </div>
+                          </div>
+                          <div class="col-2 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">IBAMA</p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-son list-son-card ">
+                        <div class="row m-0 p-0">
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">Daniel Moraes de Freitas</p>
+                            </div>
+                          </div>
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">daniel-moraes.freitas@ibama.gov.br</p>
+                            </div>
+                          </div>
+                          <div class="col-2 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">IBAMA</p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-son list-son-card ">
+                        <div class="row m-0 p-0">
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">Leandro Hartleben Cordeiro</p>
+                            </div>
+                          </div>
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">leandro.cordeiro@ibama.gov.br</p>
+                            </div>
+                          </div>
+                          <div class="col-2 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">IBAMA</p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-son list-son-card ">
+                        <div class="row m-0 p-0">
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">Nara Vidal Pantoja</p>
+                            </div>
+                          </div>
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">nara.pantoja@ibama.gov.br</p>
+                            </div>
+                          </div>
+                          <div class="col-2 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">IBAMA</p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-son list-son-card ">
+                        <div class="row m-0 p-0">
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">Pedro Henrique de Jesus Sarassua</p>
+                            </div>
+                          </div>
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">pedro.sarassua@ibama.gov.br</p>
+                            </div>
+                          </div>
+                          <div class="col-2 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">IBAMA</p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-son list-son-card ">
+                        <div class="row m-0 p-0">
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">Rômulo de Santana Bispo</p>
+                            </div>
+                          </div>
+                          <div class="col-5 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">romulo.bispo@ibama.gov.br</p>
+                            </div>
+                          </div>
+                          <div class="col-2 m-0 p-0">
+                            <div class="d-flex flex-row justify-content-center gap-1">
+                              <p class="text-content-modal-card m-0 p-0">IBAMA</p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <div class="line mt-5"></div>
+
+                    <div class="row p-0 m-0 mt-0">
+                      <div class="col p-0 m-0">
+                        <button class="btn btn-inf btn-noborder">
+                        <fa-icon [icon]="icon_plus" style="font-size: 15px;"></fa-icon>
+                          Editar
+                        </button>
+                      </div>
+                      <div class="col p-0 m-0">
+                        <p class="p-0 m-auto text-end">
+                          <button class="btn btn-inf btn-noborder" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <fa-icon [icon]="icon_plus" style="font-size: 15px;"></fa-icon>
+                            Anotações
+                          </button>
+                        </p>
+                      </div>
+                      <div class="collapse col-12 p-0 m-0" id="collapseExample" style="transition: all .2s;">
+                        <div class="m-0 mt-3 p-0" style="box-shadow: none;">
+                          <label class="card-textarea-text m-0 p-0">Incluir Anotação</label>
+                          <textarea class="form-control mt-3" style="height: 150px;" placeholder="Inclua uma anotação que tenha relação com a aba que está ativa"></textarea>
+                          <button class="btn mt-3 btn-inf btn-green btn-noborder" style="float: right;">Salvar anotação</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fazer marcacao para o coordenador -->
+            <ul class="list-group sub-card">
+              <li class="list-group-item d-flex gap-2">
+                Nara Vidal Pantoja
+                <div class="circle-equipe"></div>
+              </li>
+              <li class="list-group-item d-flex gap-2">
+                Daniel Moraes de Freitas
+                <div class="circle-equipe2"></div>
+              </li>
+              <li class="list-group-item">Ana Beatriz de Oliveira</li>
+              <li class="list-group-item">Leandro Hartleben Cordeiro</li>
+              <li class="list-group-item">Pedro Henrique de Jesus Sarassua</li>
+              <li class="list-group-item">Rômulo de Santana Bispo</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ///CARD INFERIOR - GOVERNANÇA\\\ -->
+        <div class="card p-3 mb-0 mt-0">
+          <div class="content-bottom">
+            <button class="btn mb-3 btn-modal-aside" data-bs-toggle="modal" data-bs-target="#exampleModal6">Governança</button>
+            <div class="modal fade modal-card" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content modal-content-card">
+                  <div class="modal-header modal-header-card">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel6">Detalhamento de Governança</h1>
+                    <button type="button" class="btn-close btn-close-card" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body modal-body-card modal-scroll">
+                    <div class="d-flex flex-row gap-2 justify-content-center align-itens-center mb-4 mt-3">
+                      <h3 class="m-0 p-0">Código do Projeto -</h3>
+                      <p class="m-0 p-0 modal-content-text">ACT CENSIPAM/IBAMA</p>
+                    </div>
+                    <div class="row m-0 p-0 ps-5 pe-5">
+                      <div class="col m-0 p-0">
+                        <div class="m-0 p-3 sub-card">
+                          <div class="p-0 m-0">
+                            <p class="m-0 p-0" style="color: rgb(255, 87, 87)">Não há governaça cadastrada para este projeto.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="line mt-5"></div>
+
+                    <div class="row p-0 m-0 mt-0">
+                      <div class="col p-0 m-0">
+                        <p class="p-0 m-auto text-end">
+                          <button class="btn btn-inf btn-noborder" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <fa-icon [icon]="icon_plus"></fa-icon>
+                            Anotações
+                          </button>
+                        </p>
+                      </div>
+                      <div class="collapse col-12 p-0 m-0" id="collapseExample" style="transition: all .2s;">
+                        <div class="m-0 mt-3 p-0" style="box-shadow: none;">
+                          <label class="card-textarea-text m-0 p-0">Incluir Anotação</label>
+                          <textarea class="form-control mt-3" style="height: 150px;" placeholder="Inclua uma anotação que tenha relação com a aba que está ativa"></textarea>
+                          <button class="btn mt-3 btn-inf btn-green btn-noborder" style="float: right;">Salvar anotação</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sub-card p-3">
+              <p class="text-content-gov p-0 m-0">Sem registros de governança!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ///BOTÕES\\\ -->
+        <div class="p-4 pb-0 pt-0">
+          <div class="d-flex flex-row justify-content-between mt-4">
+            <div class="d-flex gap-2 justify-content-start">
+              <button class="btn btn-inf btn-noborder">
+                <fa-icon [icon]="icon_edit" ></fa-icon>
+              </button>
+              <button class="btn btn-inf btn-noborder">
+                <fa-icon [icon]="icon_lig"></fa-icon>
+              </button>
+              <button class="btn btn-inf btn-noborder">
+                <fa-icon [icon]="icon_setas"></fa-icon>
+              </button>
+            </div>
+            <div class="d-flex flex-row gap-2">
+              <button class="btn btn-inf btn-noborder btn-yellow">
+                Editar
+              </button>
+              <button class="btn btn-inf btn-noborder btn-red">
+                Excluir
+              </button>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 m-0 p-0 flex-wrap mt-4 justify-content-start p-0 pb-0 pt-0">
+            <button class="btn btn-inf btn-noborder btn-yellow">
+              Prestar Contas
+            </button>
+            <button class="btn btn-inf btn-noborder btn-gray">
+              Suspender
+            </button>
+            <button class="btn btn-inf btn-noborder btn-red">
+              Cancelar Projeto
+            </button>
+          </div>
+          <button class="btn btn-inf btn-noborder mt-4" routerLink="/projetos">
+            Voltar
+          </button>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</body>

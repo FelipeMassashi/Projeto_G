@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.navbar{
+  height: 100vh;
+  background-color: #07405D;
+  position: fixed;
+  top: 43px;
+  z-index: 2;
+}
+
+#container{
+  margin: 0 auto;
+}
+
+#menu{
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23.48px;
+  margin-top: 20px;
+}
+
+fa-icon{
+   margin-right: 8px;
+   font-size: 25px;
+   color: white;
+}
+
+#menu-item{
+  font-size: 23px;
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+.rounded{
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+div::-webkit-scrollbar {
+    width: 0px;
+}
+
+button:hover{
+  color: red;
+}
+
+.submenu{
+  position: relative;
+  right: 25%;
+  width: 100%;
+}
+
+#submenu-item{
+  font-size: 18px;
+  transition: all 0s ;
+  width: 100%;
+  padding: 5px;
+}
+
+#submenu-item:hover{
+  transition: none;
+  color: #67AE3E;
+  background-color: rgba(194, 194, 194, 0.336);
+  cursor: pointer;
+}
+
+.nav-link{
+  color: rgb(255, 255, 255);
+}
+
+.nav-link:hover{
+  transition: all 0s;
+  color: #c0c0c0;
+}
+
+.teste3{
+  scroll-behavior: auto;
+}
+
+.logo{
+  height: 78.4px;
+  width: 280px;
+  background-image: url("../../assets/geprod.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  position: relative;
+  left: -12%;
+
+}
+
+.customClass{
+  position: absolute;
+  color:#67AE3E;
+}
+
+
+
+
+
+
+
+
+
+
+
+

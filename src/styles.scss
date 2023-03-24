@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+.col-2{
+  padding: 0;
+}
+
+:root{
+  --body: #E8F3F5;
+  --font-title: #07405D;
+  --font-content: #000000;
+  --font-title-main: #000000;
+  --icon: #2D3965;
+  --card: #FFFFFF;
+  --sub-card: #FFFFFF;
+  --sub-card-dados: rgba(188, 204, 218, 0.2);
+  --card-add: rgba(188, 204, 218, 0.2);
+  --border-shadow-card: 0px 4px 10px 2px rgba(161, 161, 161, 0.25);
+  --border-subcard: 1px solid #BFBFBF;
+  --line-span: #BFBFBF;
+  --card-projetos-listar: #e0e0e017;
+  --teste: #313640;
+  --card-detalhar: rgb(243, 243, 243);
+  --input: rgba(128, 128, 128, 0.075);
+  --modal-header: #fcfcfc;
+  --border-list-first-item: #BFBFBF;
+  --icon-resp-div: #383E47;
+  --icon-resp: #ffffff;
+}
+
+:root[data-theme="dark"]{
+  --body: #262F3F;
+  --font-title: #FFFFFF;
+  --font-content: #FFFFFF;
+  --font-title-main: #E2E2E2;
+  --icon: #E2E2E2;
+  --card: #383E47;
+  --sub-card: #313640;
+  --sub-card-dados: rgba(188, 204, 218, 0.2);
+  --card-add: rgba(78, 207, 78, 0.425);
+  --border-shadow-card: 0px 4px 10px 2px #1B243280 ;
+  --border-subcard: 1px solid #5C5C5C;
+  --line-span: #7a7a7a;
+  --card-projetos-listar: #313640;
+  --teste: #FFFFFF;
+  --card-detalhar: #e0e0e017;
+  --input: rgba(128, 128, 128, 0.315);
+  --modal-header: #30363dda;
+  --border-list-first-item: #5C5C5C;
+  --icon-resp-div: #ffffff;
+  --icon-resp: #383E47;
+}
+
+body{
+  background-color: var(--body);
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+  background-color: white;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--body);
+}
+body::-webkit-scrollbar-track-piece {
+  background: #CCCCCC;
+}
+body::-webkit-scrollbar-thumb {
+  background: #07405D;
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-corner {
+  background: #FF0000;
+  border-radius: 5px;
+}
+
+#barra-brasil{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.bs-datepicker{
+  box-shadow: var(--border-shadow-card);
+}
